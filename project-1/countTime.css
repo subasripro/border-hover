@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 body{
-   background-color: rgb(104, 162, 27);
-   font-size:1.8rem;
-   color: antiquewhite;
+  background-image: url("pexels-photo-1571442.jpeg");
+
+  background-position:center;
+   
+   color: rgb(8, 6, 3);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
     margin: 0;
     text-transform: uppercase;
+   
    
    
 }
@@ -43,6 +46,9 @@ main{
   
     
 }
+.title-name{
+    font-size: 2rem;
+}
 .w{
     font-size: 10px;
     display: flex;
@@ -52,6 +58,6 @@ main{
     font-weight: bold;
 }
 .countdowns-continer div .p1{
-    background-color: rgb(237, 243, 157);
+   /*  background-color: rgb(237, 243, 157); */
    margin-right:15px;
 }

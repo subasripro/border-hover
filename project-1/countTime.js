@@ -16,23 +16,15 @@ function updateDate() {
      const m = Math.floor((diff/1000/60)%60)
      const s = Math.floor((diff/1000)%60)
     /*  console.log(d + ":" + h + ":" + m + ":" + s ) */
-   days.innerHTML = d<10?"0"+d:d
+   days.innerHTML = d<10?"0"+d:d +":"
   hours.innerText = h <10?"0"+h:h
   minuts.innerText = m<10?"0"+m:m
   secont.innerText =s<10?"0"+s:s
 }
 setInterval(updateDate , 1000)
 
-/* console.log(new Date())
-console.log(new Date().getHours()-24)
-console.log(toDay)
-console.log(tomorrow) */
-//console.log(tomorrowDate)
-/* console.log(diff)
-console.log(d)
-console.log(h)
-console.log(m)
-console.log(s) */
+
+
 
 
 
