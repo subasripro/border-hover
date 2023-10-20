@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 body{
   background-image: url("pexels-photo-1571442.jpeg");
@@ -48,6 +48,7 @@ main{
 }
 .title-name{
     font-size: 2rem;
+    
 }
 .w{
     font-size: 10px;

@@ -16,13 +16,15 @@ function updateDate() {
      const m = Math.floor((diff/1000/60)%60)
      const s = Math.floor((diff/1000)%60)
     /*  console.log(d + ":" + h + ":" + m + ":" + s ) */
-   days.innerHTML = d<10?"0"+d:d +":"
-  hours.innerText = h <10?"0"+h:h
-  minuts.innerText = m<10?"0"+m:m
-  secont.innerText =s<10?"0"+s:s
+   days.innerHTML = formetTime(d)
+  hours.innerText =formetTime( h )
+  minuts.innerText =formetTime(m) 
+  secont.innerText =formetTime(s)
 }
 setInterval(updateDate , 1000)
-
+function formetTime (time){
+  return time<10?"0"+time:time
+}
 
 
 

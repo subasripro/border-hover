@@ -57,6 +57,7 @@ function checkS() {
 
 function valueUnSlected () {
 
+  // next quizes comes with unched box
   checkBox.forEach((checkBox)=>{
      
       checkBox.checked = false;
@@ -64,20 +65,16 @@ function valueUnSlected () {
 
 }
 
-function check () {
-  
-}
+
 function submit () {
     document.getElementById("submit").addEventListener("click",()=>{
      
      /*  let x = checkBox.value  */
-     
-       
       click()
       render()
         
     })
-  
+
 }
 submit()
 
@@ -86,6 +83,7 @@ function click () {
   
   const answer =checkS()
   console.log(answer)
+  
   if(answer){
     // check the answers
   if(answer === quizzData[arrayIn].correct){
