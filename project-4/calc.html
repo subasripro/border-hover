@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock App</title>
+    <link rel="stylesheet" href="calc.css">
+</head>;
+<body>
+    <main class="colck-store">
+        <div class="input-el">
+            <input type="text" placeholder="0" name="output" id="input-val">
+        </div>
+        <div class="numbers">
+        <div class="numers-store">
+          
+            <button onclick="cl()">C</button >
+            <button onclick="inputVa('%')">%</button>
+            <button onclick="slice()">x</button>
+            <button class="opertor" onclick="inputVa('/')">/</button>
+        </div>
+        <div class="numers-store">
+            <button onclick="inputVa('7')">7</button>
+            <button  onclick="inputVa('8')">8</button>
+            <button  onclick="inputVa('9')">9</button>
+            <button class="opertor" onclick="inputVa('*')">*</button>
+        </div>
+        <div class="numers-store">
+            <button onclick="inputVa('4')">4</button>
+            <button onclick="inputVa('5')">5</button>
+            <button onclick="inputVa('6')">6</button>
+            <button class="opertor" onclick="inputVa('-')">-</button>
+        </div>
+        <div class="numers-store">
+            <button onclick="inputVa('1')">1</button>
+            <button onclick="inputVa('2')">2</button>
+            <button onclick="inputVa('3')">3</button>
+            <button class="opertor" onclick="inputVa('+')">+</button>
+        </div>
+        <div class="numers-store">
+            <button onclick="inputVa('00')">00</button>
+            <button onclick="inputVa('0')">0</button>
+            <button onclick="inputVa('.')">.</button>
+            <button class="opertor plus" onclick="arthic()">=</button>
+        </div>
+    </div>
+    </main>
+ <script>
+  const input = document.getElementById("input-val")
+
+  function inputVa(num){
+    input.value += num
+  }
+  function arthic () {
+
+     try {
+        input.value = eval(input.value)
+    }
+    catch{
+        alert('invalid')
+    }
+  }
+
+ function cl(){
+   input.value = "" 
+ }
+ function slice (){
+    input.value = input.value.slice(0,-1)
+ }
+
+ </script>
+</body>
+</html>
