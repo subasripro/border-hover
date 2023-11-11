@@ -1,0 +1,83 @@
+// this i precticed
+
+/*     ul.innerHTML+=`<div class="list-continer" id="list-continer">
+
+    <div class="mini-c1">
+    <input type ="radio" name="rad" id="rad" > <span id="span">${input.value}</span>
+    </div>
+
+   <div class="mini-c">
+     <div id="don">done</div>
+     <div id="del"> delete </div>
+      </div>
+
+     </div>
+     ` */
+  /*    const el = document.getElementById("don")
+     const elem1 = document.getElementById("span");
+     const elem4 = document.getElementById("del")
+     const con = document.getElementById("list-continer")
+
+     el.addEventListener("click",active)
+     
+    function active(){elem1.style.textDecoration ="line-through";}
+   
+     elem4.addEventListener("click",delele)
+     function delele(){ con.style.display="none"}
+     input.value="" */
+
+
+     // 
+     
+   /* let tasks_elem = `
+   <div class="task-continer">
+
+     <input type="checkbox" name="box" id="box" >
+
+     <span class="input-text">${text}</span>
+
+     <button class="edit" >
+       edit
+     </button>
+
+     <button class="delete">
+   
+     delete 
+     
+     </button> 
+     
+     </div>
+     ` */
+
+     // foreach
+
+         
+  //   const getTextNode = document.querySelectorAll(".input-text")
+
+  //  const getDeleteNode = document.querySelectorAll(".delete")
+
+  //  const getCheckBoxNode = document.querySelectorAll("#box")
+  //  getDeleteNode.forEach((rem)=>{
+  //     rem.onclick = () =>{
+  //       rem.parentNode.remove()
+  //     }
+  //  })
+
+  //  getTextNode.forEach((line)=>{
+  //   line.onclick = ()=>{
+  //     line.style. textDecoration ="line-through #000000 2px ";
+  //     // getCheckBoxNode.setAttribute ="checked"
+  //     // line.style. textDecorationColor = "#000000";
+  //     // textDecorationThickness = "10px"
+  //   }
+  //  })
+   
+
+  // getCheckBoxNode.forEach((check)=>{
+   
+  //   // check.setAttribute("checked","checked") 
+  //   if(check.checked){
+      
+  //     alert("y")
+  //   }
+  // })

@@ -9,6 +9,7 @@ body{
     display: flex;
     place-content: center;
     width: 100%;
+    background: #191515b1;
 }
 @media  screen and (min-width:400px){
 
@@ -16,19 +17,20 @@ body{
   
         display: flex;
         flex-direction: column;
-       place-content: center;
+      justify-content: center;
+      align-items: center;
+     width: 300px;
+       
        
     }
     .input-el{
-        background-color: #000000;
+        background: #000000;
       padding: 20px;
-       
-       
-      
+     
     }
     input[type="text"]::placeholder{
      
-        margin-right: 8px;
+        margin-right: 5px;
     }
     input[type = "text"]{
        width:250px;
@@ -48,11 +50,9 @@ body{
     
         place-content: center;
         padding: 2px;
-        box-shadow: 0 0 100 red;
         padding-top: 10px;
         height: 300px;
-        border-radius: 1%;
-      
+   
     }
     .numers-store{
        

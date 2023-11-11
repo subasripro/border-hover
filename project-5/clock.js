@@ -39,10 +39,7 @@ setInterval(()=>{
 const dh = document.getElementById("hour")
 const dm = document.getElementById("min")
 const ds = document.getElementById("secont")
-
-
-
-
+const ap = document.getElementById("ap")
 
 
 setInterval(() => {
@@ -52,9 +49,14 @@ setInterval(() => {
     let sec = day.getSeconds()
      let min = day.getMinutes()
 
+     if(hour>12){
+      hour = hour-12
+     }
+     let ampm = hour>=12?"PM":"AM"
       dh.innerHTML =v(hour)
       dm.innerHTML =v(min) 
-      ds.innerHTML =v(sec)
+      ds.innerHTML =v(sec) 
+      ap.innerHTML = ampm
 
       
 }, );
