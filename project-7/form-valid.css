@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* :root{
+    --bg-color:rgba(#000)
+} */
+body{
+   background-color: #363b3c;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.2rem;
+   display: flex;
+   min-height: 100vh;   
+   justify-content: center;
+ 
+
+}
+
+section{
+
+    background-color: rgb(98, 94, 98);
+ 
+    display: flex;
+    flex-direction: column;
+   padding: 15px;
+
+
+}
+header{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+
+
+.name{
+
+ padding: 10px;
+    
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    padding: 15px;
+    width: 320px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    /* border: none; */
+    outline: none;
+
+
+}
+
+
+input:active{
+    outline: none;
+    border: none;
+}
+.submit{
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    padding: 10px;
+   
+}
+input[type="submit"]{
+ padding: 10px;
+ background-color: blue;
+ border: none;
+ border-radius: 6px;
+}
+
+/* input[type="submit"]:active{
+    box-shadow:0 0 7px black; 
+   font-size: 15px;
+
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(56, 56, 209);
+} */
+fieldset{
+    border: 3px solid rgb(131, 131, 239);
+    color: rgb(127, 127, 236);
+    font-size: 14px;
+    border-radius: 7px;
+    
+  
+}
+legend{
+    padding: 2px;
+    background-color: aliceblue;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+ 
+}
+span{
+    display: none;
+}
+.style{
+    border: 3px solid rgb(86, 86, 225);
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-left: 5px;
+    color: rgb(238, 238, 238);
+   display: none;
+}
+p::before{
+    content: " !";
+    color: rgb(0, 0, 0);
+    font-variant-emoji: text;
+ 
+    font-size: 20px;
+    width: 15px;
+    height: 10px;
+   margin-right: 7px;
+   
+   
+}
+
+.info{
+ display: none;
+}
+small{
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+small::before{
+    content: "!";
+    color: #000;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.eC , .l-em ,.repassInfo{
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    display: none;
+}
+.eC::before ,.l-em::before,.repassInfo::before{
+    content: "!";
+    color: #000;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+
+.green{
+    color: rgb(78, 236, 78);
+   
+}
+/* \2610" */
+
+.msg-s{
+    color: rgb(68, 212, 68);
+}

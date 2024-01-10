@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --color-wh--:#ffff;
+    --color-block:#000000;
+    ---size-small--:1rem;
+    --size-larg--:2rem;
+    --medi--:20px;
+}
+
+body{
+    background:var(--color-block);
+    height: 100vh;
+    color: var(--color-wh--);
+    overflow: hidden;
+    font-family:sans-serif;
+}
+
+@media screen and (max-width:600px){
+
+ section{
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(98, 240, 98),rgb(69, 197, 239)) !important;
+    overflow: scroll;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+ }
+    header{
+    
+      padding: var(---size-small--);
+      color: var(--color-block);
+
+    }
+ div.search{
+    text-align: center;
+
+ }
+    header h1{
+        
+        font-size:25px;
+        padding: var(---size-small--);
+        text-align: center;
+    }
+    div.search input[type="search"]{
+        width:250px;
+        height: 39px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 2px 0px 8px 0px #837f7f;;
+        /* border: 1px black solid; */
+        
+    }
+    div.search input[type="search"]::placeholder{
+        font-size:var(---size-small--);
+        padding: 5px;
+        color: #949393;
+        text-transform: capitalize;
+      
+
+    }
+    div.search input[type="search"]:focus,div.search input[type="search"]:active{
+        border-bottom: 3    px black solid;
+       outline: none;
+    
+    }
+    div.search input[type="button"]{
+        padding:10px;
+        border: none;
+       border-radius: 3px;
+
+    }
+
+
+    main{
+        text-align: center;
+        height: 100%;
+        color: var(--color-block);
+    }
+
+    :is(main) div{
+      font-size: var(--medi--); 
+      padding: var(---size-small--);  
+
+      div.cel{
+       font-size: var(--size-larg--);
+       color: var(--color-block);
+       font-weight:700;
+      }
+      div.city h2{
+        color: var(--color-block);
+
+      }
+      div.details{
+        display: inline-block;
+      }
+      div.details div p{
+        font-size: 1.3rem;
+
+      }
+      div.img-icon i.ic-sun{
+        font-size: 5rem;
+        height: 3rem;
+
+
+      }
+
+      div.details i{
+        font-size: 2.5rem;
+      }
+
+    
+    }
+
+    
+}
+
+

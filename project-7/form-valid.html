@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Validation</title>
+    <link rel="stylesheet" href="form-valid.css">
+    <link rel="shortcut icon" href="/project-3/menu (1).png" type="image/x-icon">
+  
+</head>
+<body>
+    
+    <section>
+        <header>
+         <div class="tittle">
+            LOG IN ACCOUNT
+         </div>
+        </header>
+        <div>
+        
+            <form action="/p0.html" method="post" name="myForm"  id="myForm" autocomplete="off">
+            <div class="name">
+               <!-- <fieldset>
+                <legend>
+                 First Name
+                </legend>
+             
+               </fieldset> -->
+          
+                <input type="text" name="f-name" id="f-name" placeholder="FirstName" autocomplete="off" >
+                <p id="msg"></p>
+       
+
+                <br>
+                <input type="text" name="l-name" id="l-name" placeholder="LastName" autocomplete="off" onclick="change_lName()" class="l-name">
+               
+                <p class="l-em"></p>
+                <br>
+              
+                <input type="email" name="p-email" id="p-email" placeholder="email" autocomplete="off" required>
+                <p class="eC"></p>
+                <br>
+                 <input type="password" name="p-pw" id="p-pw" placeholder="password"  autocomplete="off" required>
+
+                 <div class="info">
+
+                    <small class="smAz">
+
+                    </small>
+
+                    <br>
+                  <small class="Al">
+
+                  </small>
+                  <br>
+                  <small class="num">
+                   
+                  </small>
+                  <br>
+                  <small class="sym"></small>
+                  <br>
+                  <small class="eightc">
+
+                  </small>
+
+                 </div>
+
+                 <br>
+                 <input type="password" name="r-pw" id="r-pw" placeholder="conform password" autocomplete="off" class="r-pw">
+                 <br>
+
+                 <small class="repassInfo">
+
+                 </small>
+               
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit" id="submit">
+            </div>
+            </form>
+        
+        </div>
+    </section>
+    <script src="form-valid.js"></script>
+</body>
+</html>

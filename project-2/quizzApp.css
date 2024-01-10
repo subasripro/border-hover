@@ -4,7 +4,7 @@
     box-sizing: content-box;
 }
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@ body{
    align-items: center;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
+   overflow: hidden;
    
 }
 main{
@@ -19,29 +20,53 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 500px;
     min-height: 100vh;
+    margin-top: 10px;
+  
 }
 .option-continer{
-  
+  text-transform: capitalize;
     margin-top: 8px;
-  min-width: 150px;
+  min-width: 90%;
   display: flex;
   flex-direction: column;
   min-height: 150px;
- 
+ background: rgb(226, 221, 221);
 }
 li {
     list-style: none;
     line-height: 40px;
-    cursor: pointer;
+    padding: 10px;
+    
+  
     
 }
-input[type = "radio"] {
+ul{
+   background-image: linear-gradient(to bottom,rgba(32, 115, 143, 0.74)15%,rgb(255, 100, 123));
+   color: black;
+   padding: 5px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   box-shadow:  -1px 0px 3px black,
+   inset -2px -2px 4px 0px black;
+}
+input[type="radio"] {
     cursor: pointer;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   margin-right: 10px;
+}
+label{
+
+
+ 
 }
 button{
-    min-width: 299px;
+    margin-top: 20px;
+    min-width: 200px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -54,10 +79,37 @@ button{
 button:hover{
     background-color: rgb(107, 107, 207);
 }
+div:first-child{
+   background: gray;
+   padding: 10px;
+   font-size: 1.5rem;
+   margin-bottom: 5px;
+   font-weight: bold;
+   width: 85%;
 
+}
 /* .submit{
   border: none;
   font-size: 1.5rem;
   background-color: blue;
   color: antiquewhite;
 } */
+.re-l{
+    text-align: center;
+   
+}
+.js-el{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.js-el h2{
+   
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: capitalize;
+ 
+}

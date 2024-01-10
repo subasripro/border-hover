@@ -45,6 +45,7 @@ body{
        
       
     }
+
     .numbers{
       background-color: #191515;
     
@@ -88,7 +89,7 @@ body{
     button:active{
         background-color: #504c4c;
     }
-    input[type = "text"]:active{
+    input[type = "text"]:active,input[type="text"]:focus{
         border: none;
         outline: none;
         
@@ -174,7 +175,7 @@ body{
     button:active{
         background-color: #504c4c;
     }
-    input[type = "text"]:active{
+    input[type = "text"]:active, input[type="text"]:focus{
         border: none;
         outline: none;
         

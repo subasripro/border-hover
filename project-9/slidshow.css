@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.521),rgba(0, 128, 0, 0.407));
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+/* div.slide-wrape, div.img-list{
+    background-color: rgba(32, 159, 255, 0.885);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: auto;
+  
+}
+div.slide-wrape{
+   overflow-x: scroll;
+
+}
+
+div.slide-wrape,.img-list,img{
+    width: 500px;
+   
+} */
+div.continer{
+   overflow: hidden;
+   margin-top: 10rem;
+ 
+}
+
+
+div.slide-wrape,div.grids{
+    background: lightblue;
+    width: 530px;
+    height: 205px;
+    margin: auto;
+  
+}
+
+div.grids{
+    
+    width:490px;
+    display:grid;
+    grid-template-columns: repeat(15,1fr);
+   align-items: center;
+   justify-content: flex-start;
+   align-content: center;
+   justify-items: center;
+    grid-gap: 21px;
+    /* padding: 2rem; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin-bottom: 60px;
+
+}
+div.grids::-webkit-scrollbar{
+    display: none;
+}
+div.grids >i {  
+    background: rgb(128, 126, 126);
+    width: 470px;
+    height: 30vh;
+   text-align: center;
+   padding-top: 70px;
+   font-size: 2rem;
+   font-weight: 700;
+   font-style: inherit;
+   
+}
+div.slid-scroll{
+    height: 15px;
+   
+    width: 490px;
+    position: absolute;
+   transform: translate(20px,-24px);
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.slid-scroll:active{
+    height: 8px;
+}
+:is(div.slid-scroll:active) div.scrollbar-thum{
+  background: #363434;
+    height: 7px;
+}
+div.scrollbar-track{
+    height: 5px;
+    width: 490px;
+    background: rgb(230, 243, 230);
+    border-radius: 5px;
+
+}
+div.scrollbar-thum{
+    position: inherit;
+    height: inherit;
+    width: 180px;
+    background: gray;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+div.scrollbar-thum:hover{
+    height: 7px;
+    
+}
+/* div.scrollbar-thum:active{
+    height: 8px;
+    cursor: grabbing;
+    top: -2px;
+} */
+
+div.scrollbar-thum::after{
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+   /* background-color: aqua; */
+    cursor: grab;
+}
+:is(div.slide-wrape){
+
+    #prv-slid{
+        transform: matrix(1, 0, 0, 1, -60, 65);
+        display: none;
+    }
+    #next-slid{
+        transform: matrix(1, 0, 0, 1, 540, -195);
+    }
+    button{
+        padding: 15px;
+        position: absolute;
+        font-size: 20px;
+        border: none;
+        background: #cfcfcf;  
+        
+    }
+    
+}
+button#prv-slid:hover,button#next-slid:hover{
+ cursor: pointer;
+}
+button#prv-slid:active,button#next-slid:active{
+    background-color: #363434;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
