@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
     <link rel="stylesheet" href="blog.css">
-    
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
+
+
     <header class="header" id="header">
         <nav class="navbar parent">
             <a href="./index.html">
@@ -20,25 +20,27 @@
 
             <div class="menu" id="menu">
                 <ul class="list">
-                    <li class="list-item">
+                    <li class="list-item-me">
                         <a href="#" class="list-link current">home</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item-me">
                         <a href="#" class="list-link">catacrie</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item-me">
                         <a href="#" class="list-link">recipe</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item-me">
                         <a href="#" class="list-link">news</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item-me">
                         <a href="#" class="list-link">membership</a>
                     </li>
-                    <li class="list-item hidden">
-                        <a href="#" class="list-link">sign in</a>
+                    <!-- hidden was in this element -->
+                    <li class="list-item-me hidden">
+                        <a href="#" class="list-link fan-bor">sign in</a>
                     </li>
-                    <li class="list-item hidden">
+                    <!-- this also hidden -->
+                    <li class="list-item-me hidden">
                         <a href="#" class="list-link">sign up</a>
                     </li>
                 </ul>
@@ -64,7 +66,7 @@
                 <button class="btn place-item-cen menu-toggle-icon " id="menu-toggle">
 
                     <!-- <i class="fa-solid fa-bars"></i> -->
-                    <img src="img/bars-solid.svg" alt="pic" class="ic">
+                    <img src="img/bars-solid.svg" alt="pic" class="ic hum-ico">
                  </button>
                 <button class="btn place-item-cen menu-toggle-icon hidden " id="menu-toggle">
 <!--                 
@@ -72,8 +74,8 @@
                     <img src="img/xmark-solid.svg" alt="pic" class="ic">
                  </button>
 
-                <a href="#" class="list-link hidden">sign in</a>
-                <a href="#" class="list-link btn s-up-btn f-border hidden">
+                <a href="#" class="list-link hidden btn s-in-btn lg-s">sign in</a>
+                <a href="#" class="list-link btn s-up-btn fan-bor hidden lg-s">
                     <span>sign up</span>
                 </a>
             </div>
@@ -82,30 +84,46 @@
 
     <div class="de">
         <!-- <i class="fa-solid fa-sun"></i> -->
-        <img src="img/sun-solid.svg" alt="pic" class="de" id="de">
+        <img src="img/sun-solid.svg" alt="pic" class="de ic" id="de">
     </div>
-    <div class="search-form-con parent2">
+    <!-- search -->
+
+  <div class="search-form-con parent2">
      
-        <div class="form-c-inner">
-            <form action="#" class="form">
-                <input type="text" name="txt" id="txt" class="form-input" placeholder="what are u looking for?">
-                <button type="submit" class="btn form-btn">
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                    <img src="img/magnifying-glass-solid.svg" alt="pic" class="ic">
+                <div class="form-c-inner">
+                    <form action="#" class="form">
+                        <input type="text" name="txt" id="txt" class="form-input" placeholder="what are u looking for?">
+                        <button type="submit" class="btn form-btn">
+                            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                            <img src="img/magnifying-glass-solid.svg" alt="pic" class="ic">
+                        </button>
+                    </form>
+                    <span class="form-note">
+                        or press ESC to close
+                    </span>
+                </div>
+                <button class="btn-f-close place-item-cen" id="form-c-btn">
+                    <!-- <i class="fa-solid fa-xmark"></i>  -->
+                    <img src="img/xmark-solid.svg" alt="pic" class="ic">
                 </button>
-            </form>
-            <span class="form-note">
-                or press ESC to close
-            </span>
-        </div>
-        <button class="btn-f-close place-item-cen" id="form-c-btn">
-            <!-- <i class="fa-solid fa-xmark"></i>  -->
-            <img src="img/xmark-solid.svg" alt="pic" class="ic">
-        </button>
-    </div>
-<section class="fea-arti sec-hea-offset">
-    <div class="fea-arti-continer container d-grid">
-        <div class="fea-content d-grid">
+ </div>
+  
+
+<main class="fea-arti sec-hea-offset main">
+
+    <!-- data container -->
+
+    <div class="fea-arti-continer main-con d-grid">
+
+       <!-- main -sec -->
+    <section class="section">
+
+        <div class="fea-art-con d-grid">
+
+        
+        <div class="fea-content fea-pare d-grid">
+
+
             <div class="headline-banner">
                 <h3 class="headline fan-bor">
                     <span class="place-item-cen">
@@ -116,77 +134,91 @@
                     apple announces new partnership....
                 </span>
             </div>
-            <a href="/post.html" class="article fea-arti fea-arti-1">
+
+           <!-- 1 -->
+            <a href="#" class="article feacherd-arti feacherd-arti-1">
                 <img src="img/istockphoto-1124742848-1024x1024.jpg" alt="pic" title="explore it" class="arti-img" >
                 <span class="arti-cat">
-                    technology
+                    technology  
                 </span>
                 <div class="art-data-con">
 
                 <div class="ari-data">
 
                  <span>dec 5th 2021</span>
-                 <span class="arti-data-spacer"></span>
+        <span class="arti-data-spacer"></span>
                  <span>8 min red</span>
 
                 </div>
-                <h3 class="title arti-tit">is vr future?</h3>
+
+ <h3 class="title arti-tit">is vr future?</h3>
             </div>
             </a>
 
             <!-- 2 -->
-
-            <a href="/post.html" class="article fea-arti fea-arti-1">
+            <a href="#" class="article feacherd-arti feacherd-arti-2">
                 <img src="img/istockphoto-1678330314-1024x1024.jpg" alt="pic" title="explore it" class="arti-img" >
                 <span class="arti-cat">
                     technology
                 </span>
                 <div class="art-data-con">
-
+               
+                    <!-- 2 childern -->
                 <div class="ari-data">
 
                  <span>dec 5th 2021</span>
-                 <span class="arti-data-spacer"></span>
-                 <span>8 min red</span>
+
+ <span class="arti-data-spacer"> </span>
+  <span>8 min red</span>
 
                 </div>
-                <h3 class="title arti-tit">is vr future?</h3>
+<h3 class="title arti-tit">is vr future?</h3>
+
             </div>
+
             </a>
 
             <!-- 3 -->
+            <a href="#" class="article feacherd-arti feacherd-arti-3">
 
-
-            <a href="/post.html" class="article fea-arti fea-arti-1">
                 <img src="img/istockphoto-1054228718-1024x1024.jpg" alt="pic" title="explore it" class="arti-img" >
-                <span class="arti-cat">
-                    technology
-                </span>
+
+ <span class="arti-cat"> technology</span>
+
                 <div class="art-data-con">
 
                 <div class="ari-data">
 
                  <span>dec 5th 2021</span>
-                 <span class="arti-data-spacer"></span>
+
+        <span class="arti-data-spacer"><span>
+
                  <span>8 min red</span>
 
                 </div>
-                <h3 class="title arti-tit">is vr future?</h3>
+<h3 class="title arti-tit">is vr future?</h3>
+
             </div>
             </a>
+
+
         </div>
+        
        <!-- sidbar -->
        <div class="sidbar d-grid">
         <h3 class="title fea-con-tit">
             trending news
         </h3>
+
         <a href="#" class="trand-news-box">
+
             <div class="trand-news-img-box">
              <span class="trand-num place-item-cen">
           01
              </span>
-             <img src="/project-11/img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
+             <img src="/project-11/img/gratisography-strange-world-free-stock-photo.jpg" alt="pic" class="arti-img">
             </div>
+
             <div class="trand-news-data">
             
                 <div class="ari-data">
@@ -196,15 +228,20 @@
                  <span>8 min red</span>
 
                 </div>  
+                <h3 class="ari-tit">some article title</h3>
             </div>
+
         </a>
+
         <a href="#" class="trand-news-box">
+
             <div class="trand-news-img-box">
              <span class="trand-num place-item-cen">
           02
              </span>
-             <img src="/project-11/img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
+             <img src="/project-11/img/frosted-rosehip-picjumbo-com.jpg" alt="pic" class="arti-img">
             </div>
+
             <div class="trand-news-data">
             
                 <div class="ari-data">
@@ -214,15 +251,20 @@
                  <span>8 min red</span>
 
                 </div>  
+                <h3 class="ari-tit">some articale title</h3>
             </div>
+
         </a>
+
         <a href="#" class="trand-news-box">
+
             <div class="trand-news-img-box">
              <span class="trand-num place-item-cen">
           03
              </span>
              <img src="/project-11/img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
             </div>
+
             <div class="trand-news-data">
             
                 <div class="ari-data">
@@ -232,15 +274,20 @@
                  <span>8 min red</span>
 
                 </div>  
+                <h3 class="ari-tit">some articale title</h3>
             </div>
+            
         </a>
+
         <a href="#" class="trand-news-box">
+
             <div class="trand-news-img-box">
              <span class="trand-num place-item-cen">
           04
              </span>
-             <img src="/project-11/img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
+             <img src="/project-11/img/gratisography-cool-cat.jpg" alt="pic" class="arti-img">
             </div>
+
             <div class="trand-news-data">
             
                 <div class="ari-data">
@@ -250,12 +297,777 @@
                  <span>8 min red</span>
 
                 </div>  
+                <h3 class="ari-tit">some articale title</h3>
             </div>
+
         </a>
+
+        <a href="#" class="trand-news-box">
+
+            <div class="trand-news-img-box">
+             <span class="trand-num place-item-cen">
+          05
+             </span>
+             <img src="/project-11/img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
+            </div>
+
+            <div class="trand-news-data">
+            
+                <div class="ari-data">
+
+                 <span>dec 5th 2021</span>
+                 <span class="arti-data-spacer"></span>
+                 <span>8 min red</span>
+
+                </div>  
+                <h3 class="ari-tit">some article title</h3>
+            </div>
+            
+        </a>
+
        </div>
+
+    </div>
+    </section>
+
+
+       <!-- qiuk read -->
+<section class="quick-read slide-300 ">
+    <div class="parent container d-grid">
+      
+
+        <div class="swiper">
+            <h2 class="title section-tit" data-name="quick read">Quik Read </h2>
+            <div class="swiper-wrapper   swiper-arow">
+
+
+                <a href="#" class="article swiper-slide swiper-relat">
+                    <img src="img/fantasy-mountain-scenery-picjumbo-com.jpg" alt="pic" class="arti-img swiper-conect">
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+           
+                </a>
+         
+
+                <!-- 2 -->
+                   <a href="#" class="article swiper-slide">
+                    <img src="img/istockphoto-1124742848-1024x1024.jpg" alt="pic" class="arti-img">
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a>  
+
+                <!-- 3 -->
+
+                <a href="#" class="article swiper-slide">
+                    <img src="img/frosted-rosehip-picjumbo-com.jpg" alt="pic" class="arti-img">
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a>  
+
+                <!-- 4-->
+
+                 <a href="#" class="article swiper-slide">
+                    <img src="img/gratisography-cool-cat.jpg" alt="pic" class="arti-img">
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a>
+
+                <!-- 5 -->
+
+                
+                    
+                    <a href="#" class="article swiper-slide">
+                    <img src="img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="arti-img">
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a>  
+
+             
+
+                <!-- 2ch swipe-wrape -->
+          <div class="arow-con">
+            <div class="swiper-button-next swiper-controls" >&#60;</div>
+
+            <div class="swiper-button-prev swiper-controls">&#62;</div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+ 
+        
+        </div>
+
+         
+         
+
+        </div>
+    </div>
+</section>
+
+
+ <!-- quiek read 700 -->
+ <section class="quick-read  slide-700 ">
+    <div class="parent">
+        <h2 class="title section-tit" data-name="quick read">Quik Read </h2>
+
+        <div class="swiper d-grid">
+
+            <div class="swiper-wrapper d-grid swiper-arow ">
+
+                <a href="#" class="article swiper-slide-2 ">
+                    <div class="img-grid two-slid ">
+                        <img src="img/fantasy-mountain-scenery-picjumbo-com.jpg" alt="pic" class="">
+                        <img src="./img/istockphoto-1124742848-1024x1024.jpg" alt="" class="">
+                    </div>
+                    
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+           
+                </a>       
+         
+
+                <!-- 2 -->
+                   <a href="#" class="article swiper-slide-2">
+                    <div class="img-grid two-slid">
+                        <img src="img/istockphoto-1334575820-1024x1024.jpg" alt="pic" class="">
+                        <img src="./img/gratisography-cool-cat.jpg" alt="">
+                    </div>
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a> 
+
+                <!-- 3 -->
+
+                 <a href="#" class="article swiper-slide-2">
+                    <div class="img-grid two-slid">
+                        <img src="img/istockphoto-1678330314-1024x1024.jpg" alt="pic" class="">
+                        <img src="./img/frosted-rosehip-picjumbo-com.jpg" alt="">
+                    </div>
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a>   
+
+                 <!-- 2ch swipe-wrape -->
+          <div class="arow-con">
+          
+            <div class="swiper-button-next-700  swiper-controls" >&#60;</div>
+            <div class="swiper-button-prev-700 swiper-controls">&#62;</div>
+          </div>
+          
+            <div class="swiper-pagination"></div> 
+
+            </div>
+        
+        </div>
+
+    </div>
+</section>
+
+<!-- quiec read 1200 -->
+<section class="quick-read  slide-1200">
+    <div class="parent lay-1500">
+        <h2 class="title section-tit" data-name="quick read">Quik Read </h2>
+
+        <div class="swiper d-grid">
+            <div class="swiper-wrapper d-grid swiper-arow" >
+
+                <a href="#" class="swiper-slide-3 " >
+                    <div class="img-grid third-slid">
+                        <img src="img/fantasy-mountain-scenery-picjumbo-com.jpg" alt="pic" class="swip-img">
+                        <img src="./img/istockphoto-1124742848-1024x1024.jpg" alt="">
+                        <img src="./img/istockphoto-1054228718-1024x1024.jpg" alt="">
+                    </div>
+                    
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+           
+                </a>
+         
+
+                <!-- 2 -->
+                    <a href="#" class="swiper-slide-3">
+                    <div class="img-grid third-slid">
+                        <img src="img/istockphoto-1334575820-1024x1024.jpg" alt="pic" class="swip-img">
+                        <img src="./img/gratisography-cool-cat.jpg" alt="">
+                        <img src="./img/istockphoto-1678330314-1024x1024.jpg" alt="">
+                    </div>
+                
+                    <div class="art-data-con">
+
+                        <div class="ari-data">
+        
+                         <span>dec 5th 2021</span>
+                         <span class="arti-data-spacer"></span>
+                         <span>8 min red</span>
+        
+                        </div>
+                        <h3 class="title arti-tit">is vr future?</h3>
+                    </div>
+                    
+                </a> 
+                  
+          <!-- 2ch swipe-wrape -->
+          <div class="arow-con">
+          
+            <div class="swiper-button-next-1200  swiper-controls" >&#60;</div>
+            <div class="swiper-button-prev-1200 swiper-controls">&#62;</div>
+          </div>
+          
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- older poste -->
+<section class="older-post section">
+    <div class="parent-5">
+     
+        <h2 class="title section-tit" data-name="older post">
+            older post
+        </h2>
+
+        <div class="older-post-grid-wrap d-grid">
+             <!-- o 1 -->
+            <a href="#" class="article d-grid img-data-con">
+
+                <div class="older-post-arti-img-wrap">
+                    <img src="./img/old-post6.jpg" alt="" class="arti-img">
+                </div>
+
+                <div class="art-data-con">
+
+                    <div class="ari-data">
+    
+                     <span>dec 5th 2021</span>
+                     <span class="arti-data-spacer"></span>
+                     <span>8 min red</span>
+    
+                    </div>
+                    <h3 class="title arti-tit">BRIGHTWIN</h3>
+                    <p class="arti-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt dolore .</p>
+                </div>
+            </a>
+
+            <!-- o 2 -->
+            <a href="#" class="article d-grid img-data-con">
+                <div class="older-post-arti-img-wrap">
+                    <img src="./img/old-post2.jpg" alt="" class="arti-img">
+                </div>
+
+                <div class="art-data-con">
+
+                    <div class="ari-data">
+    
+                     <span>dec 5th 2021</span>
+                     <span class="arti-data-spacer"></span>
+                     <span>8 min red</span>
+    
+                    </div>
+                    <h3 class="title arti-tit">TREE LIFE</h3>
+                    <p class="arti-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt dolore .</p>
+                </div>
+
+            </a>
+
+            <!-- o 3 -->
+            <a href="#" class="article d-grid img-data-con ">
+                <div class="older-post-arti-img-wrap">
+                    <img src="./img/old-post-bts-3.jpg" alt="" class="arti-img">
+                </div>
+
+                <div class="art-data-con">
+
+                    <div class="ari-data">
+    
+                     <span>dec 5th 2021</span>
+                     <span class="arti-data-spacer"></span>
+                     <span>8 min red</span>
+    
+                    </div>
+                    <h3 class="title arti-tit">BTS GROUP</h3>
+                    <p class="arti-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt dolore .</p>
+                </div>
+            </a>
+
+            <!-- o 4 -->
+            <!-- <a href="#" class="article d-grid img-data-con">
+                <div class="older-post-arti-img-wrap">
+                    <img src="./img/old-post-bw4.jpg" alt="" class="arti-img">
+                </div>
+
+                <div class="art-data-con">
+
+                    <div class="ari-data">
+    
+                     <span>dec 5th 2021</span>
+                     <span class="arti-data-spacer"></span>
+                     <span>8 min red</span>
+    
+                    </div>
+                    <h3 class="title arti-tit">is vr future?</h3>
+                    <p class="arti-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt dolore .</p>
+                </div>
+            </a> -->
+
+            <!-- 0 5 -->
+            <a href="#" class="article d-grid img-data-con">
+                <div class="older-post-arti-img-wrap">
+                    <img src="./img/istockphoto-1334575820-1024x1024.jpg" alt="" class="arti-img">
+                </div>
+
+                <div class="art-data-con">
+
+                    <div class="ari-data">
+    
+                     <span>dec 5th 2021</span>
+                     <span class="arti-data-spacer"></span>
+                     <span>8 min red</span>
+    
+                    </div>
+                    <h3 class="title arti-tit">TECHNOLOGY</h3>
+                    <p class="arti-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt dolore .</p>
+                </div>
+            </a>
+
+         
+        </div>
+
+        <div class="see-more-con">
+            <a href="#" class="see-more-btn place-item-cen">
+             see more &#62;
+            </a>
+        </div>
     </div>
 </section>
    
-    <script src="blog.js"></script>
+<!-- poplur tags -->
+<section class="populer-tags section">
+    <div class="container parent">
+        <h2 class="title section-tit" data-name="populer tags">
+      populer tags
+        </h2>
+        <div class="populer-tags-con d-grid">
+            <!-- 1 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                    #travel
+                </span>
+                <img src="./img/tags-1.jpg" alt="" class="">
+            </a>
+
+            <!-- 2 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                    #food
+                </span>
+                <img src="img/tags-2.jpg" alt="" class="">
+            </a>
+            <!-- 3 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                  #technology
+                </span>
+                <img src="./img/tags-3.jpg" alt="" class="">
+            </a>  
+            <!-- 4 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                   #health
+                </span>
+                <img src="./img/tags-4.jpg" alt="" class="">
+            </a>
+            <!-- 5 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                 #nature
+                </span>
+                <img src="./img/tags-5.jpg" alt="" class="">
+            </a>
+            <!-- 6 -->
+            <a href="#" class="article">
+                <span class="tag-name">
+                  #fitness
+                </span>
+                <img src="./img/tags-6.jpg" alt="" class="">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- newsletter-->
+<section class="newsletter section">
+
+    <div class="container">
+        <h2 class="title section-tit" data-name="newsletter">
+            newsletter
+        </h2>
+        <div class="form-c-inner">
+            <h6 class="title newsletter-tit">
+                subscribe to newsFlash
+            </h6>
+            <p class="news-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            </p>
+            <form action="" class="form">
+                <input type="text" class="input-form" placeholder="enter your email address">
+                <button class="btn form-c-btn" type="submit">
+                <i>   &#9993;</i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<!-- blog post -->
+<section class="blog-post sec-hea-offset">
+    <div class="blog-post-con container">
+        <div class="blog-post-data">
+            <h3 class="title blog-post-tit">
+                is vr the future
+            </h3>
+            <div class="ari-data">
+
+                <span>dec 5th 2021</span>
+                <span class="arti-data-spacer"></span>
+                <span>8 min red</span>
+
+               </div>
+               <img src="./img/istockphoto-1124742848-1024x1024.jpg" alt="pic">
+        </div>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt similique quas sint quaerat aperiam illo illum officiis excepturi ex, esse dignissimos praesentium tenetur, commodi blanditiis a, pariatur aliquam. Sint?
+            </p>
+
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati, temporibus quaerat sit nostrum consequatur aut cupiditate labore ducimus ut laboriosam exercitationem tempora ex unde? Magni optio recusandae sunt molestias.
+            </p>
+            <blockquote class="q">
+                <p>
+                    <span>
+                  <q>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt similique quas sint quaerat aperiam illo illum officiis excepturi ex, esse dignissimos praesentium tenetur
+                  </q>
+                    </span>
+
+                
+
+                </p>
+            </blockquote>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque, optio maiores totam cumque a amet dolorum facilis? </p>
+
+            <div class="author d-grid">
+                <div class="author-img-box">
+                    <img src="./img/old-post-bw4.jpg" alt="" class="arti-img">
+                </div>
+                <div class="author-about">
+                    <h3 class="author-name">
+                        john doe
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem molestiae repellendus, sunt ad 
+                    </p>
+
+                    <ul class="list social-media">
+                        <li class="list-item-au">
+                            <a href="#" class="list-link">
+                                <i><img src="./img/instagram.svg" alt="pic" class="icon"></i>
+                            </a>
+
+                            </li>
+                            <!-- 2 -->
+                            <li class="list-item-au">
+                            <a href="#" class="list-link">
+                                <i><img src="./img/facebook.svg" alt="pic" class="icon"></i>
+                            </a>
+                            </li>
+                            <!-- 3 -->
+                            <li class="list-item-au">
+                            <a href="#" class="list-link">
+                                <i><img src="./img/twitter.svg" alt="pic" class="icon"></i>
+                            </a>
+                         </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer section">
+    <div class="footer-con container d-grid">
+        <div class="company-data ">
+         <a href="./blog.js">
+            <h2 class="logo"></h2>
+        
+         </a>
+
+         <p class="company-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <ul class="list social-media">
+            <li class="list-item">
+                <a href="#" class="list-link">
+                    <i><img src="./img/instagram.svg" alt="pic" class="icon"></i>
+                </a>
+            </li>
+            <li class="list-item">
+                <!-- 2 -->
+                <a href="#" class="list-link">
+                    <i><img src="./img/facebook.svg" alt="pic" class="icon"></i>
+                </a>
+            </li>
+                <!-- 3 -->
+                <!-- 3 -->
+                <li class="list-item">
+                <a href="#" class="list-link">
+                    <i><img src="./img/twitter.svg" alt="pic" class="icon"></i>
+                </a>
+                </li>
+                <!-- 4 -->
+                <li class="list-item">
+                <a href="#" class="list-link">
+                    <i><img src="./img/github.svg" alt="pic" class="icon"></i>
+                </a>
+                </li>
+                <!-- 5 -->
+                <li class="list-item">
+                <a href="#" class="list-link">
+                    <i><img src="./img/youtube.svg" alt="pic" class="icon"></i>
+                </a>
+                </li>
+         
+        </ul>
+
+        <span class="copyright-notice">&copy; 2024 NewsFlash All Rights reserved.</span>
+
+        </div>
+
+        <div>
+            <h6 class="title footer-tit">
+                Categaries
+            </h6>
+            <ul class="list footer-list">
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 2 -->
+        <div>
+            <h6 class="title footer-tit">
+             usful links
+            </h6>
+            <ul class="list footer-list">
+                <li class="list-item">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 3 -->
+        <div>
+            <h6 class="title footer-tit">
+           company
+            </h6>
+            <ul class="list footer-list">
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+                <li class="list-item-fo">
+                    <a href="#" class="list-link">
+                        Sample Items
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+</div>
+
+</main>
+    <script type="module" src="blog.js"> </script>
+
 </body>
 </html>
