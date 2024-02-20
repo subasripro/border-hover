@@ -1,4 +1,9 @@
+/* 
+mobile screen = 300px to 640px
+tablet = 768 to 1024 or 1280 to 800 px
+desktop = 1930 t0 1080 
 
+*/
 /*  */
 
 /* applay 700 to 999 */
@@ -35,41 +40,12 @@
         display: none;
     }
 
-    .footer-con{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .col{
-        grid-column: 1/3;
-    }
-    .fea-items{
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px 20px;
-        align-items: center;
-        padding: 40px 40px;
-    }
-    .lg-grid{
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        padding: 40px 40px;
-        gap: 50px;
-        justify-content: center;
-    }
-    .baner {
       
-        height: 25vh;
-       
-     
-    }
+      .sm-banner{
 
-    .baner .desc-ban {
-      gap: 0.5rem;
-        
-    }
+      }
 
-    .sm-banner .banner-box {
-        grid-template-columns: repeat(1,1fr);
-        cursor: pointer;
-    }
+    
     .sm-banner2.section {
         padding: 0  40px;
         padding-bottom: 40px;
@@ -124,30 +100,30 @@
     .navbar.active{
         display: block;
     }
-       
-    .lap-main{
- 
-        height: 70vh;
-   
-        background-position: top 30% right 30% ;
-        padding: 0 80px;
-       
-    
+
+    .hero{
+        background-position: top 15% right 30%;
+        padding: 0 20px;
     }
+    .header{
+        padding: 20px 10px;
+    }
+       
+   
 }
 
 /* 300 to 500 */
 
-@media screen and (max-width:550px){
+@media screen and (max-width:999px){
     
     .header{
-        padding: 10px 30px ;
+        padding: 20px 30px ;
     }
 
     .hero{
         padding: 0 20px;
         background-position: 72%;
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
     h2{
         font-size: 32px;
@@ -158,7 +134,7 @@
 
     .baner {
       
-        height: 24vh;
+        height: 20vh;
        
      
     }
@@ -167,11 +143,14 @@
         font-size: 15px;
     }
     
-    .fea{
-        padding: 20px;
+    .fea.section{
+        padding: 20px  6rem;
     }
     .fea-items{
-       grid-template-columns: repeat(2,1fr);
+        padding: 0;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px 15px;
+    
     }
 
     .footer.section{
@@ -179,7 +158,7 @@
     }
 
     .footer-con{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 20px;
 
     }
@@ -196,24 +175,27 @@
         padding: 0 10px;
     }
 
-    .fea-items{
-        padding: 0;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px 15px;
-    }
     .product.section{
-        padding: 20px 20px;
+        padding: 20px 40px;
     }
-    .lg-grid {
-        grid-template-columns: repeat(1,1fr);
-        align-items: center;
-        padding: 10px 0;
-        gap: 10px;
-        justify-content: center;
+    
+        .lg-grid {
+            grid-template-rows: repeat(2,1fr);
+            align-items: center;
+            padding: 10px 0;
+            gap: 10px;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+    .newsletter .news-con{
+    grid-auto-flow: column;
     }
-
+    .news-con .email-box{
+        width: 100%;
+    }
     .sm-banner.section{
-        padding: 0;
+        padding: 0 10px;
     }
     .sm-banner2.section {
         padding: 20px  20px;
@@ -221,13 +203,13 @@
     }
 
     .banner-box2 {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
         gap: 10px;
     }
 
     .footer-con .col-4 .row-app-sc {
         display: flex;
-        flex-direction:column;
+        flex-direction: row;
         gap: 5px;
         flex-wrap: wrap;
     }
@@ -239,38 +221,175 @@
         padding-top: 18px;
         padding-right: 8px;
     }
-}
-
-/* 550 to 850 */
-
-/* 799 to 999 */
-
-@media screen and (min-width:799px) and (max-width:899px){
-
-    .fea-items{
-        gap: 10px 30px;
-        grid-template-columns: repeat(3,1fr);
+    .prodetails.section{
+        padding: 7rem 30px;
     }
-    .lg-grid{
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px 30px;
-    }
-    .footer-con{
-        grid-template-columns: repeat(2,1fr);
-        margin-bottom: 10px;
-    }
-    
 }
 
 /* 350px */
 
-@media screen and (max-width:350px){
+@media screen and (min-width:300px) and (max-width:699px){
+     
+    
+    .pro .pro-item {
+        padding: 8px;
+    }
 
+    .pro-item img {
+        border-radius: 10px;
+    }
+    .pro-item .desc h5{
+        font-size: 15px;
+        font-stretch: condensed;
+        font-weight: 100;
+
+        padding: 0;
+    }
+    .pro-con .pro{
+        padding: 0;
+    }
+    
+    .fea.section{
+        padding: 20px 15%;
+    }
+     .fea-items{
+        grid-template-columns: repeat(2,45%);
+        overflow: hidden;
+     }
+     .lg-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product.section{
+        padding: 10px 20px;
+    }
+    .baner{
+        height: 30vh;
+    }
+    .sm-banner .banner-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+   .sm-banner.section{
+    padding: 0;
+   }
+   .sm-banner2.section{
+    padding: 20px 20px;
+   }
+
+    .ban-one .img-relay2 img {
+    
+        height: 15rem;
+    
+    }
+
+   .sm-banner2 .banner-box2{
+    grid-template-columns: repeat(1,1fr);
+   }
+    .newsletter.section{
+        padding: 30px 10px;
+    }
+    .newsletter .news-con{
+        grid-template-rows: repeat(2,1fr);
+    }
+   .news-con .email-box{
+    width: 100%;
+   }
+
+
+    .footer-con{
+        
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 10px;
+    }
+    .col{
+        grid-column: 1/2;
+    }
+    .footer-con .col-2, .col-3, .col-4{
+        padding: 0;
+    }
+    .footer-con .col-3{
+        padding: 0;
+    }
+  
+
+    .col-4 .row-app-sc{
+        flex-direction: column;
+    }
+
+    /* smaill device */
+
+    .prodetails .single-pro-d-con{
+    
+        grid-template-rows:  repeat(1,1fr);
+        grid-template-columns: none;
+       row-gap: 20px;
+    }
+  
+     .blog-con{
+        padding: 0 20px;
+     }
+    .blog-con .blog-img-contant-box {
+     grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+      
+    }
+
+    .prodetails.section{
+        padding-top: 1rem 20px;
+    }
+
+    .blog-img-contant-box  h1 {
+        top: -8px;
+        left: -11px;
+       
+    }
+    .about-pare.section {
+        padding: 40px 20px;
+    }
+    .about-pare .about-cont {
+        /* grid-template-rows: repeat(1,1fr); */
+        grid-template-columns: none;
+        row-gap: 20px;
+       
+    }
+
+    .about-video-con {
+        width: 90%;
+    }
+    
+
+
+}
+
+@media screen and (max-width:300px){
+    .header {
+        padding: 10px 20px;
+    }
     .fea-items{
         grid-template-columns: repeat(2,1fr);
     }
-    .fea.section{
+    .lg-grid{
         padding: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-con{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: none;
+    }
+   
+    .sm-banner2 .banner-box2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .goog-pay{
+        width: 35px;
+    }
+    .hero .contant {
+        word-break: break-all;
+    }
+    .hero .contant h1{
+        font-size: 18px;
+    }
+    .fea.section {
+        padding: 10px 20%;
     }
     .hero{
         margin-top:4rem ;
@@ -278,6 +397,17 @@
     }
     .desc-ban h2{
         font-size: smaller;
+    }
+
+    .product.section {
+        padding: 20px 18px;
+    }
+
+    .newsletter .news-con {
+        grid-auto-flow: row;
+    }
+    .col .img-con img{
+        width: 50px;
     }
     
     .footer-con .col-4 .row-app-sc {
@@ -294,5 +424,28 @@
     }
     .newsletter .email-box{
         flex-direction: column;
+    }
+
+    .sm-banner .banner-box {
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: none;
+        column-gap: 0;
+        row-gap: 15px;
+        cursor: pointer;
+    }
+
+    .single-pro-d-con {
+        grid-template-columns: none;
+        grid-template-rows: repeat(1,1fr);
+        row-gap: 20px;
+        padding-top: 1rem;
+    }
+
+    .blog-con .blog-img-contant-box {
+       
+        grid-template-columns: none;
+        grid-template-rows: repeat(6,1fr);
+        column-gap: 0;
+        row-gap: 20px;
     }
 }

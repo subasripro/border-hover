@@ -41,7 +41,7 @@ const forms = document.getElementById("myForm")
 // }
 
 forms.addEventListener("submit",(e)=>{
-    e.preventDefault()
+    // e.preventDefault()
 //     let email = change_email(),
 //      Fn =change_fName(),
 //     ln= change_lName(),
